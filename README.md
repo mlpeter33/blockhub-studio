@@ -112,7 +112,7 @@ git push origin feature/your-feature-name
 Please ensure your code follows the project's coding standards and is well-documented.
 
 ## License 📝
-This project is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0). Feel free to use, modify, and distribute this project as you see fit.
+This project is licensed under the [Apache License 2.0](LICENSE). Feel free to use, modify, and distribute this project as you see fit.
 
 ## Contact 📬
 
