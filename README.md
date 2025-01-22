@@ -18,11 +18,11 @@ The BlockHub Studio Landing Page is a dynamic and visually stunning interface bu
 
 ## Technologies Used 🛠️
 
-- **Framework**: <a href="[URL](https://nextjs.org/)">Next.js</a>  Next.js
+- **Framework**: [Next.js](https://nextjs.org/)
 
-- **Styling**: <a href="[URL](https://tailwindcss.com/)">Tailwind CSS</a> 
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 
-- **Animations**: <a href="[URL](https://gsap.com/)">GSAP (GreenSock)</a> 
+- **Animations**: [GSAP (GreenSock)](https://gsap.com/)
 
 ## Getting Started 🏁
 
@@ -30,9 +30,9 @@ Follow the instructions below to set up and run the project locally.
 
 ### Prerequisites 📋
 
-- <a href="[URL](https://nodejs.org/en)">Node.js</a> 
+- [Node.js](https://nodejs.org/en)
 
-- <a href="[URL](https://www.npmjs.com/)">npm</a> or <a href="[URL](https://yarnpkg.com/)">yarn</a> 
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
 ### Installation 💻
 1. Clone the repository:
@@ -99,7 +99,7 @@ git checkout -b feature/your-feature-name
 
 3. Make your changes and commit them:
 ```shell
-git commit -m "Add yout commit message here"
+git commit -m "Add your commit message here"
 ```
 
 4. Push your changes to your branch:
@@ -112,11 +112,11 @@ git push origin feature/your-feature-name
 Please ensure your code follows the project's coding standards and is well-documented.
 
 ## License 📝
-This project is licensed under the <a href="[URL](https://www.apache.org/licenses/LICENSE-2.0)">Apache License 2.0</a>. Feel free to use, modify, and distribute this project as you see fit.
+This project is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0). Feel free to use, modify, and distribute this project as you see fit.
 
 ## Contact 📬
 
-For any questions or suggestions, feel free to enter our discord <a href="[URL](https://discord.gg/c2DeRfswp9)">Blockchain Lab</a> or open an issue in the repository.
+For any questions or suggestions, feel free to enter our discord [Blockchain Lab](https://discord.gg/c2DeRfswp9) or open an issue in the repository.
 
 Thank you for contributing to BlockHub Studio's Landing Page!
 
