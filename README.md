@@ -24,6 +24,8 @@ The BlockHub Studio Landing Page is a dynamic and visually stunning interface bu
 
 - **Animations**: [GSAP (GreenSock)](https://gsap.com/)
 
+- **Hosting**: Probably [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/)
+
 ## Getting Started 🏁
 
 Follow the instructions below to set up and run the project locally.
