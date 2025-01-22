@@ -1,2 +1,122 @@
-# sirius-token-frontend
-Rep of the frontend for the sirius token 
+# BlockHub Studio - Landing Page 🚀
+
+Welcome to the BlockHub Studio Landing Page repository! BlockHub Studio is an open-source initiative to create a diverse and interactive community that wants to learn about blockchain.
+
+## About the Project 🌟
+
+The BlockHub Studio Landing Page is a dynamic and visually stunning interface built to showcase BlockHub's concepts and ideas. This project is part of an educational community dedicated to blockchain technology, aiming to foster collaboration, learning, and innovation in the blockchain space.
+
+## Features ✨ (WIP)
+
+- **Interactive Elements**: Hover effects and container movements. 
+
+- **Responsive Design**: Optimized for various devices (desktop, tablet, mobile). 
+
+- **Contact Links**: Easy navigation to essential sections and contact information.
+
+- **Open Source**: Contributions are welcome to enhance and improve the project.
+
+## Technologies Used 🛠️
+
+- **Framework**: <a href="[URL](https://nextjs.org/)">Next.js</a>  Next.js
+
+- **Styling**: <a href="[URL](https://tailwindcss.com/)">Tailwind CSS</a> 
+
+- **Animations**: <a href="[URL](https://gsap.com/)">GSAP (GreenSock)</a> 
+
+## Getting Started 🏁
+
+Follow the instructions below to set up and run the project locally.
+
+### Prerequisites 📋
+
+- <a href="[URL](https://nodejs.org/en)">Node.js</a> 
+
+- <a href="[URL](https://www.npmjs.com/)">npm</a> or <a href="[URL](https://yarnpkg.com/)">yarn</a> 
+
+### Installation 💻
+1. Clone the repository:
+```shell
+git clone https://github.com/mlpeter33/BlockHubStudio-lading-page.git
+cd BlockHubStudio-lading-page
+```
+
+2. Install dependencies:
+```shell
+npm install
+```
+
+### Running the Project ⚡
+1. Go to the app:
+```shell
+cd blockhubedu-landing
+```
+
+2. Start the development server:
+```shell
+npm run dev
+```
+
+3. Open your browser and navigate to:
+```shell
+http://localhost:3000
+```
+
+## Contributing 🤝
+
+We welcome contributions from both internal team members and the broader community! Here’s how you can get involved:
+
+### Team members 👫
+1. Our team members can contribute directly without forking the repository, as long as they follow the branch naming convntion:
+```shell
+user/your-username
+```
+
+2. Create a new branch with your username: 
+```shell
+git checkout -b user/your-username
+```
+
+3. Make your changes and commit them:
+```shell
+git commit -m "Add your commit message here"
+```
+
+4. Push your changes to your branch:
+```shell
+git push origin user/your-username
+```
+
+5. Open a pull request.
+
+### External Contributors 🌍
+1. Fork the repository.
+
+2. Create a new branch:
+```shell
+git checkout -b feature/your-feature-name
+```
+
+3. Make your changes and commit them:
+```shell
+git commit -m "Add yout commit message here"
+```
+
+4. Push your changes to your branch:
+```shell
+git push origin feature/your-feature-name
+```
+
+5. Open a pull request.
+
+Please ensure your code follows the project's coding standards and is well-documented.
+
+## License 📝
+This project is licensed under the <a href="[URL](https://www.apache.org/licenses/LICENSE-2.0)">Apache License 2.0</a>. Feel free to use, modify, and distribute this project as you see fit.
+
+## Contact 📬
+
+For any questions or suggestions, feel free to enter our discord <a href="[URL](https://discord.gg/c2DeRfswp9)">Blockchain Lab</a> or open an issue in the repository.
+
+Thank you for contributing to BlockHub Studio's Landing Page!
+
