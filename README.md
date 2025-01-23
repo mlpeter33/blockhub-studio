@@ -68,7 +68,7 @@ http://localhost:3000
 
 We welcome contributions from both internal team members and the broader community! Here’s how you can get involved:
 
-### Team members 👫
+### Team members 👽
 1. Our team members can contribute directly without forking the repository, as long as they follow the branch naming convntion:
 ```shell
 user/your-username
