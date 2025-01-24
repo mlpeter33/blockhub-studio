@@ -7,11 +7,16 @@ export default {
   ],
   theme: {
     extend: {
+      extend: {
+        fontFamily: {
+          cabinSketch: ["cabin-sketch", "sans-serif"],
+        },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
     },
   },
+},
   plugins: [],
 } satisfies Config;
