@@ -1,12 +1,15 @@
 import React, {ReactNode, useState} from 'react';
+import { start } from 'repl';
 
 type GridItemProps = {
     children: ReactNode;
+    startX: number;
+    startY: number;
   };
 
-export default function GridItem({children}: GridItemProps) {
+export default function GridItem({children, startX, startY}: GridItemProps) {
 
-    const [position, setPosition] = useState({x: 0, y: 0});
+    const [position, setPosition] = useState({x: startX, y: startY});
 
     const handleDragStart = (event: React.DragEvent<HTMLDivElement>) => {
         const rect = event.currentTarget.getBoundingClientRect();
