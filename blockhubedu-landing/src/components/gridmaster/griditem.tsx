@@ -1,7 +1,11 @@
-import React from 'react';
-import react,{useState} from 'react';
+import React, {ReactNode, useState} from 'react';
 
-export default function GridItem() {
+type GridItemProps = {
+    children: ReactNode;
+  };
+
+export default function GridItem({children}: GridItemProps) {
+
     const [position, setPosition] = useState({x: 0, y: 0});
 
     const handleDragStart = (event: React.DragEvent<HTMLDivElement>) => {
@@ -35,10 +39,7 @@ export default function GridItem() {
         draggable="true"
         onDragStart={handleDragStart}>
                 <div className="bg-white rounded-lg shadow-md">
-                    <div className="p-4 text-center">
-                    <p className=" text-gray-800 text-4xl mb-4">Welcome to</p>
-                        <p className=" text-gray-800 text-7xl font-[cabinSketch] font-bold mb-2 tracking-widest">BlockHub</p>
-                        <p className=" text-gray-800 text-7xl font-[cabinSketch] font-bold mb-2 tracking-widest">Studio</p>
+                    <div className="p-4 text-center">{children}
                         </div>
                     </div>
                 </div> 
