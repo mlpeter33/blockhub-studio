@@ -36,7 +36,7 @@ export default function GridItem({children, startX, startY}: GridItemProps) {
         <div className="relative w-screen h-screen flex justify-center items-center"
         onDragOver={handleDragOver}
         onDrop={handleDrop}>
-        <div className="grid-item absolute"
+        <div className="grid-item absolute cursor-pointer"
         style={{left: position.x, top: position.y}}
         draggable="true"
         onDragStart={handleDragStart}>
