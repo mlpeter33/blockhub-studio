@@ -7,14 +7,8 @@ export default {
   ],
   theme: {
     extend: {
-      extend: {
         fontFamily: {
-          cabinSketch: ["cabin-sketch", "sans-serif"],
-          londrinaSketch: ["'Londrina Sketch'", "cursive"],
-          shizuru: ["'Shizuru'", "cursive"],
-          frederickaTheGreat: ["'Fredericka the Great'", "cursive"],
-          justAnotherHand: ["'Just Another Hand'", "cursive"],
-          redactedScript: ["'Redacted Script'", "cursive"],
+          cabinSketch: ["Cabin-Sketch", "sans-serif"], 
         },
       colors: {
         background: "var(--background)",
@@ -22,6 +16,5 @@ export default {
       },
     },
   },
-},
   plugins: [],
 } satisfies Config;
