@@ -8,7 +8,7 @@ export default function GridGame({children}: GridItemProps) {
 
     return(
         //<div className="flex justify-center items-center h-screen">
-        <div className="grid gap-4 w-screen h-screen" style={{outline: "none"}}>
+        <div className="relative grid gap-4 w-screen h-screen" style={{outline: "none"}}>
             {React.Children.map(children, (child) => (
                 <div className="h-full w-full relative">
                         {child}
