@@ -33,7 +33,7 @@ export default function Home() {
                             <DragArea onDropItem={handleDropItem}>
                             <GridDragItem id="item1" startX={positions.item1.x} startY={positions.item1.y} onPositionChange={handlePositionChange}>
                                 <p className=" text-gray-800 text-3xl mb-4">Welcome to</p>
-                                <p className=" text-gray-800 text-5xl font-[cabinSketch] font-bold mb-2 tracking-widest">BlockHub</p>
+                                <p className=" text-gray-800 text-5xl font-[londrinaSketch] font-bold mb-2 tracking-widest">BlockHub</p>
                                 <p className=" text-gray-800 text-5xl font-[cabinSketch] font-bold mb-2 tracking-widest">Studio</p>
                             </GridDragItem> 
                             </DragArea>
