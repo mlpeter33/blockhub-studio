@@ -8,8 +8,8 @@ export default function Home() {
 
     const [positions, setPositions] = useState({
         item1: { x: 550, y: 200 },
-        item2: { x: 550, y: 200 },
-        item3: { x: 0, y: 200 },
+        item2: { x: 850, y: 200 },
+        item3: { x: 250, y: 200 },
     });
 
     const handlePositionChange = (id: string, x: number, y: number) => {
