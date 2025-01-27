@@ -2,6 +2,7 @@ import GridGame from "../components/grid-master/grid-game";
 import GridDragItem from "../components/grid-master/grid-drag-item";
 import GridChain from "../components/grid-master/grid-chain";
 import DragArea from "../components/grid-master/drag-area";
+import Header from "../components/header";
 import { useState } from "react";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
     };
         return(
         <div>
+            <Header></Header>
             <div className="relative w-screen h-screen overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-full bg-scroll bg-top flex flex-col justify-center items-center" style={{ backgroundImage: "url('/assets/Background.png')" }}>
                         <GridChain>
