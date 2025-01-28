@@ -2,10 +2,21 @@
 @tailwind components;
 @tailwind utilities; 
 
+.sketchy-border {
+  filter: url(#sketchy-border);
+}
+
+svg#sketch-filter {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
 @font-face {
     font-family: "CabinSketch";
     src: url("/font/CabinSketch-Regular.ttf") format("truetype");
   }
+
 
   /*body {
   /*  font-family: "CabinSketch", sans-serif;
