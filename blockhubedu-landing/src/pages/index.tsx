@@ -41,9 +41,9 @@ export default function Home() {
     };
         return(
         <div>
-            <div className="relative w-screen h-screen overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-full bg-scroll bg-top flex flex-col" style={{ backgroundImage: "url('/assets/Background.png')" }}>
-                <Header></Header>
+         <Header></Header>  
+            <div className="relative w-screen h-screen overflow-hidden"> 
+                <div className="absolute top-0 left-0 w-full h-full bg-fixed bg-top flex flex-col" style={{ backgroundImage: "url('/assets/Background.png')" }}> 
                 <div className="justify-center items-center">
                 <GridChain>
                         <GridGame id="grid-container">
