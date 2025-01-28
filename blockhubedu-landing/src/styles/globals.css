@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities; 
 
-.sketchy-border {
-  filter: url(#sketchy-border);
+.sketchy {
+  filter: url(#sketchy);
+  transition: filter 0.3s ease-in-out;
+}
+
+.sketchy-none:hover {
+  filter: none;
 }
 
 svg#sketch-filter {

@@ -7,9 +7,9 @@ export default function Document() {
       </Head>
       <body>
        <svg id="sketch-filter">
-          <filter id="sketchy-border">
-             <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" result="noise"/>
-             <feDisplacementMap in="SourceGraphic" in2="noise" scale="2"/>
+          <filter id="sketchy">
+            <feTurbulence type="fractalNoise" baseFrequency="3" numOctaves="1" result="noise"/>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="5"/>
           </filter>
        </svg>
           <Main />
