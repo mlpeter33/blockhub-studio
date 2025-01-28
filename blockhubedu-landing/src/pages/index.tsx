@@ -1,15 +1,17 @@
+import '../styles/globals.css';
 import GridGame from "../components/grid-master/grid-game";
 import GridDragItem from "../components/grid-master/grid-drag-item";
 import GridChain from "../components/grid-master/grid-chain";
 import DragArea from "../components/grid-master/drag-area";
+import Header from "../components/header";
 import { useState } from "react";
 
 export default function Home() {
 
     const [positions, setPositions] = useState({
         item1: { x: 550, y: 200 },
-        item2: { x: 550, y: 200 },
-        item3: { x: 0, y: 200 },
+        item2: { x: 850, y: 200 },
+        item3: { x: 250, y: 200 },
     });
 
     const handlePositionChange = (id: string, x: number, y: number) => {
@@ -24,6 +26,7 @@ export default function Home() {
     };
         return(
         <div>
+            <Header></Header>
             <div className="relative w-screen h-screen overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-full bg-scroll bg-top flex flex-col justify-center items-center" style={{ backgroundImage: "url('/assets/Background.png')" }}>
                         <GridChain>
