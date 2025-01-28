@@ -1,3 +1,4 @@
+import '../styles/globals.css';
 import GridGame from "../components/grid-master/grid-game";
 import GridDragItem from "../components/grid-master/grid-drag-item";
 import GridChain from "../components/grid-master/grid-chain";

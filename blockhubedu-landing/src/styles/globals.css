@@ -3,6 +3,10 @@
 @tailwind utilities; 
 
 @font-face {
-    font-family: "Cabin-Sketch";
-    src: url("/blockhubedu-landing/src/font/CabinSketch-Regular.ttf");
+    font-family: "CabinSketch";
+    src: url("/font/CabinSketch-Regular.ttf") format("truetype");
   }
+
+  /*body {
+  /*  font-family: "CabinSketch", sans-serif;
+  /*}*/
