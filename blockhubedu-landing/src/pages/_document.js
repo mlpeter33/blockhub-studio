@@ -6,8 +6,14 @@ export default function Document() {
       <Head>
       </Head>
       <body>
-        <Main />
-        <NextScript />
+       <svg id="sketch-filter">
+          <filter id="sketchy-border">
+             <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" result="noise"/>
+             <feDisplacementMap in="SourceGraphic" in2="noise" scale="2"/>
+          </filter>
+       </svg>
+          <Main />
+          <NextScript />
       </body>
     </Html>
   );

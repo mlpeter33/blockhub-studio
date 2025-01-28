@@ -2,9 +2,10 @@ import React, {ReactNode} from 'react';
 
 type GridItemProps = {
     children: ReactNode;
+    id: string;
 };
 
-export default function GridGame({children}: GridItemProps) {
+export default function GridGame({children, id}: GridItemProps) {
 
     return(
         //<div className="flex justify-center items-center h-screen">
