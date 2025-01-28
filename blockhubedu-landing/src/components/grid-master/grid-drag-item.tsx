@@ -34,7 +34,7 @@ type GridDragItemProps = {
         const rawData = event.dataTransfer.getData("application/json");
 
         if (!rawData) return;
-    
+      
         try {
         const { offsetX, offsetY } = JSON.parse(rawData); 
         const newX = event.clientX - parentRect.left - offsetX;
@@ -53,7 +53,7 @@ type GridDragItemProps = {
         draggable="true"
         onDragStart={handleDragStart}
         onDragEnd={handleDragEnd}>
-                <div className="bg-white rounded-lg shadow-md">
+                <div className="rounded-lg bg-[url(/assets/Container.png)] p-4 bg-[length:100%_100%] bg-no-repeat">
                     <div className="p-4 text-center">{children}
                         </div>
                     </div>
