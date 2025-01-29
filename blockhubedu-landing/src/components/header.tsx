@@ -12,23 +12,23 @@ export default function Header() {
               </a>
             {/* Navigation Links */}   
               <nav className="hidden md:flex space-x-6">
-              <div className="p-2 hover:bg-white hover:scale-110 hover:shadow-lg transition-transform duration-300 rounded-lg text-white hover:text-black sketchy sketchy-none">
-               <a href="/" className="text-4xl font-shadowsLight2">
+              <div className="p-2 hover:bg-white hover:scale-110 font-shadowsLight2 hover:font-serif hover:shadow-lg transition-transform duration-300 rounded-lg text-white hover:text-black sketchy sketchy-none">
+               <a href="/" className="text-4xl">
                    Home
                </a>
                </div>
-               <div className="p-2 hover:bg-white hover:scale-110 hover:shadow-lg transition-transform duration-300 rounded-lg text-white hover:text-black sketchy sketchy-none">
-               <a href="#projects" className="text-4xl font-shadowsLight2">
+               <div className="p-2 hover:bg-white hover:scale-110 font-shadowsLight2 hover:font-serif hover:shadow-lg transition-transform duration-300 rounded-lg text-white hover:text-black sketchy sketchy-none">
+               <a href="#projects" className="text-4xl">
                    Projects
                </a>
                </div>
-               <div className="p-2 hover:bg-white hover:scale-110 hover:shadow-lg transition-transform duration-300 rounded-lg text-white hover:text-black sketchy sketchy-none">
-               <a href="#about" className="text-4xl font-shadowsLight2">
+               <div className="p-2 hover:bg-white hover:scale-110 font-shadowsLight2 hover:font-serif hover:shadow-lg transition-transform duration-300 rounded-lg text-white hover:text-black sketchy sketchy-none">
+               <a href="#about" className="text-4xl">
                    About
                </a>
                </div>
-              <div className="p-2 hover:bg-white hover:scale-110 hover:shadow-lg transition-transform duration-300 rounded-lg text-white hover:text-black sketchy sketchy-none">
-               <a href="#blog" className="text-4xl font-shadowsLight2">
+              <div className="p-2 hover:bg-white hover:scale-110 hover:shadow-lg font-shadowsLight2 hover:font-serif transition-transform duration-300 rounded-lg text-white hover:text-black sketchy sketchy-none">
+               <a href="#blog" className="text-4xl">
                    Blog
                </a>
                </div>
