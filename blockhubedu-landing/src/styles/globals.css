@@ -21,6 +21,11 @@ svg#sketch-filter {
     src: url("/font/CabinSketch-Regular.ttf") format("truetype");
   }
 
+@font-face {
+    font-family: "ShadowsLight2";
+    src: url("/font/ShadowsIntoLightTwo-Regular.ttf") format("truetype");
+}
+
 
   /*body {
   /*  font-family: "CabinSketch", sans-serif;

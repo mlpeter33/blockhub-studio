@@ -12,23 +12,23 @@ export default function Header() {
               </a>
             {/* Navigation Links */}   
               <nav className="hidden md:flex space-x-6">
-              <div className="hover:bg-white hover:scale-150 hover:shadow-lg transition-transform duration-300 rounded-lg">
-               <a href="/" className="text-white text-4xl font-cabinSketch sketchy sketchy-none hover:text-black">
+              <div className="p-2 hover:bg-white hover:scale-110 hover:shadow-lg transition-transform duration-300 rounded-lg text-white hover:text-black sketchy sketchy-none">
+               <a href="/" className="text-4xl font-shadowsLight2">
                    Home
                </a>
                </div>
-               <div className="hover:bg-white hover:scale-150 hover:shadow-lg transition-transform duration-300 rounded-lg">
-               <a href="#projects" className="text-white text-4xl font-cabinSketch sketchy sketchy-none hover:text-black">
+               <div className="p-2 hover:bg-white hover:scale-110 hover:shadow-lg transition-transform duration-300 rounded-lg text-white hover:text-black sketchy sketchy-none">
+               <a href="#projects" className="text-4xl font-shadowsLight2">
                    Projects
                </a>
                </div>
-               <div className="hover:bg-white hover:scale-150 hover:shadow-lg transition-transform duration-300 rounded-lg">
-               <a href="#about" className="text-white text-4xl font-cabinSketch sketchy sketchy-none hover:text-black">
+               <div className="p-2 hover:bg-white hover:scale-110 hover:shadow-lg transition-transform duration-300 rounded-lg text-white hover:text-black sketchy sketchy-none">
+               <a href="#about" className="text-4xl font-shadowsLight2">
                    About
                </a>
                </div>
-              <div className="hover:bg-white hover:scale-150 hover:shadow-lg transition-transform duration-300 rounded-lg">
-               <a href="#blog" className="text-white text-4xl font-cabinSketch sketchy sketchy-none hover:text-black">
+              <div className="p-2 hover:bg-white hover:scale-110 hover:shadow-lg transition-transform duration-300 rounded-lg text-white hover:text-black sketchy sketchy-none">
+               <a href="#blog" className="text-4xl font-shadowsLight2">
                    Blog
                </a>
                </div>
