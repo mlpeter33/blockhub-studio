@@ -3,7 +3,7 @@ import BlockhubLogo from "./navbar/blockhub-logo";
 
 export default function Header() {
   return (
-    <header className="relative bg-transparent bg-cover ">
+    <header className="relative bg-[url(/assets/header.jpg)] bg-cover ">
           <div className="container sticky top-0 max-w-full z-50">
           
             {/* Logo */} 

@@ -41,10 +41,10 @@ export default function Home() {
     };
         return(
         <div>
-          
+          <Header></Header> 
             <div className="relative w-screen h-screen overflow-hidden"> 
-                <div className="absolute top-0 left-0 w-full h-full bg-cover bg-top flex flex-col bg-[url(/assets/header.jpg)]"> 
-                <Header></Header>  <div className="justify-center items-center">
+                <div className="absolute top-0 left-0 w-full h-full bg-cover bg-top flex flex-col bg-[url(/assets/blueprint.jpg)]"> 
+                 <div className="justify-center items-center">
                 <GridChain>
                         <GridGame id="grid-container">
                             <DragArea onDropItem={handleDropItem}>
