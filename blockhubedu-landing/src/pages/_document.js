@@ -6,10 +6,10 @@ export default function Document() {
       <Head>
       </Head>
       <body>
-       <svg id="sketch-filter">
+      <svg id="sketch-filter">
           <filter id="sketchy">
-            <feTurbulence type="fractalNoise" baseFrequency="3" numOctaves="1" result="noise"/>
-            <feDisplacementMap in="SourceGraphic" in2="noise" scale="5"/>
+             <feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="8" result="noise"/>
+             <feDisplacementMap in="SourceGraphic" in2="noise" scale="5"/>
           </filter>
        </svg>
           <Main />

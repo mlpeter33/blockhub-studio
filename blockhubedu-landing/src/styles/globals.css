@@ -4,18 +4,17 @@
 
 .sketchy {
   filter: url(#sketchy);
-  transition: filter 0.3s ease-in-out;
+}
+svg#sketch-filter {
+  width: 0;
+  height: 0;
+  position: absolute;
 }
 
 .sketchy-none:hover {
   filter: none;
 }
 
-svg#sketch-filter {
-  width: 0;
-  height: 0;
-  position: absolute;
-}
 
 @font-face {
     font-family: "CabinSketch";

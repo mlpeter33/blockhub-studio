@@ -53,8 +53,8 @@ type GridDragItemProps = {
         draggable="true"
         onDragStart={handleDragStart}
         onDragEnd={handleDragEnd}>
-                <div className="rounded-lg bg-[url(/assets/Container.png)] p-4 bg-[length:100%_100%] bg-no-repeat">
-                    <div className="p-4 text-center">{children}
+                <div className="rounded-lg bg-transparent p-4 border-4 border-white sketchy sketchy-none hover:border-black hover:bg-white">
+                    <div className="p-4 text-center invert hover:invert-0">{children}
                         </div>
                     </div>
                 </div> 
