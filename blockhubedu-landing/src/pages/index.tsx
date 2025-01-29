@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 export default function Home() {
 
     const [positions, setPositions] = useState({
-        item1: { x: 550, y: 200 },
+        item1: { x: 350, y: 100 },
         item2: { x: 850, y: 200 },
         item3: { x: 250, y: 200 },
     });
@@ -41,31 +41,31 @@ export default function Home() {
     };
         return(
         <div>
-          
+          <Header></Header> 
             <div className="relative w-screen h-screen overflow-hidden"> 
-                <div className="absolute top-0 left-0 w-full h-full bg-cover bg-top flex flex-col bg-[url(/assets/header.jpg)]"> 
-                <Header></Header>  <div className="justify-center items-center">
+                <div className="absolute top-0 left-0 w-full h-full bg-cover bg-top flex flex-col bg-[url(/assets/blueprint.jpg)]"> 
+                 <div className="justify-center items-center">
                 <GridChain>
                         <GridGame id="grid-container">
                             <DragArea onDropItem={handleDropItem}>
                             <GridDragItem id="item1" startX={positions.item1.x} startY={positions.item1.y} onPositionChange={handlePositionChange}>
-                                <p className=" text-gray-800 text-3xl mb-4">Welcome to</p>
-                                <p className=" text-gray-800 text-5xl font-[cabinSketch] font-bold mb-2 tracking-widest">BlockHub</p>
-                                <p className=" text-gray-800 text-5xl font-[cabinSketch] font-bold mb-2 tracking-widest">Studio</p>
+                                <p className=" text-gray-800 text-3xl font-shadowsLight2 mb-4">Welcome to</p>
+                                <p className=" text-gray-800 text-9xl font-cabinSketch mb-2 tracking-widest">BlockHub</p>
+                                <p className=" text-gray-800 text-9xl font-cabinSketch mb-2 tracking-widest">Studio</p>
                             </GridDragItem> 
                             </DragArea>
                         </GridGame>
                         <GridGame id="grid-container">
                             <DragArea onDropItem={handleDropItem}>
                             <GridDragItem id="item2" startX={positions.item2.x} startY={positions.item2.y} onPositionChange={handlePositionChange}>
-                                <p className=" text-gray-800 text-3xl mb-4">Welcome to</p>
-                                <p className=" text-gray-800 text-5xl font-[cabinSketch] font-bold mb-2 tracking-widest">BlockHub</p>
-                                <p className=" text-gray-800 text-5xl font-[cabinSketch] font-bold mb-2 tracking-widest">Studio</p>
+                                <p className=" text-gray-800 text-3xl font-shadowsLight2 mb-4">lorem ipsum</p>
+                                <p className=" text-gray-800 text-5xl font-shadowsLight2 font-bold mb-2 tracking-widest">lorem</p>
+                                <p className=" text-gray-800 text-5xl font-shadowsLight2 font-bold mb-2 tracking-widest">ipsum</p>
                             </GridDragItem> 
                             <GridDragItem id="item3" startX={positions.item3.x} startY={positions.item3.y} onPositionChange={handlePositionChange}>
-                                <p className=" text-gray-800 text-3xl mb-4">Welcome to</p>
-                                <p className=" text-gray-800 text-5xl font-[cabinSketch] font-bold mb-2 tracking-widest">BlockHub</p>
-                                <p className=" text-gray-800 text-5xl font-[cabinSketch] font-bold mb-2 tracking-widest">Studio</p>
+                                <p className=" text-gray-800 text-3xl font-shadowsLight2 mb-4">lorem ipsum</p>
+                                <p className=" text-gray-800 text-5xl font-shadowsLight2 font-bold mb-2 tracking-widest">lorem</p>
+                                <p className=" text-gray-800 text-5xl font-shadowsLight2 font-bold mb-2 tracking-widest">ipsum</p>
                             </GridDragItem> 
                             </DragArea>
                         </GridGame>

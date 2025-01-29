@@ -8,6 +8,7 @@ export default {
     extend: {
         fontFamily: {
           cabinSketch: ["CabinSketch", "sans-serif"], 
+          shadowsLight2: ["ShadowsLight2", "sans-serif"],
         },
       colors: {
         background: "var(--background)",

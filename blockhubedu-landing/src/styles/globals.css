@@ -2,20 +2,29 @@
 @tailwind components;
 @tailwind utilities; 
 
-.sketchy-border {
-  filter: url(#sketchy-border);
+.sketchy {
+  filter: url(#sketchy);
 }
-
 svg#sketch-filter {
   width: 0;
   height: 0;
   position: absolute;
 }
 
+.sketchy-none:hover {
+  filter: none;
+}
+
+
 @font-face {
     font-family: "CabinSketch";
     src: url("/font/CabinSketch-Regular.ttf") format("truetype");
   }
+
+@font-face {
+    font-family: "ShadowsLight2";
+    src: url("/font/ShadowsIntoLightTwo-Regular.ttf") format("truetype");
+}
 
 
   /*body {
