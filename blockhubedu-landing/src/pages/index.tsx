@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 export default function Home() {
 
     const [positions, setPositions] = useState({
-        item1: { x: 550, y: 200 },
+        item1: { x: 350, y: 100 },
         item2: { x: 850, y: 200 },
         item3: { x: 250, y: 200 },
     });
