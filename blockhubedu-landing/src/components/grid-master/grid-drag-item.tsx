@@ -53,8 +53,8 @@ type GridDragItemProps = {
         draggable="true"
         onDragStart={handleDragStart}
         onDragEnd={handleDragEnd}>
-                <div className="rounded-lg bg-transparent p-4 border-4 border-white sketchy sketchy-none hover:border-black hover:bg-white">
-                    <div className="p-4 text-center invert hover:invert-0">{children}
+                <div className="rounded-lg bg-transparent border-4 border-white sketchy sketchy-none hover:border-black hover:bg-white">
+                    <div className="p-4 h-max-full w-max-full text-center invert hover:invert-0">{children}
                         </div>
                     </div>
                 </div> 
