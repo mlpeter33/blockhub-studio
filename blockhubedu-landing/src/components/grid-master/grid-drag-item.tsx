@@ -53,7 +53,7 @@ type GridDragItemProps = {
         draggable="true"
         onDragStart={handleDragStart}
         onDragEnd={handleDragEnd}>
-                <div className="rounded-lg bg-orange-100 border-4 border-black sketchy sketchy-none">
+                <div className="rounded-lg bg-orange-100 border-4 border-neutral-700 sketchy sketchy-none">
                     <div className="p-4 h-max-full w-max-full text-center">{children}
                         </div>
                     </div>
