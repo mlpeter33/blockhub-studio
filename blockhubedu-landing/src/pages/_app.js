@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   <Head>
     <title>BlockHub Studio</title>
     <meta name="description" content="BlockHub Studio is a platform for learning blockchain development." />
-    <link rel="icon" href="/assets/Icon.png" />
+    <link rel="icon" href="/assets/Icon.ico" />
 </Head>
 <Component {...pageProps} />
 </>
