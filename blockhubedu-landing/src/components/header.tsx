@@ -3,7 +3,7 @@ import BlockhubLogo from "./navbar/blockhub-logo";
 
 export default function Header() {
   return (
-    <header className="relative bg-[url(/assets/header.jpg)] max-w-full bg-cover ">
+    <header className="relative bg-orange-100 max-w-full bg-cover shadow-[0px_10px_30px_rgba(0,0,0,0.8)]">
           <div className="container sticky justify-between items-center mx-auto flex z-50">
           
             {/* Logo */} 
@@ -12,22 +12,22 @@ export default function Header() {
               </a>
             {/* Navigation Links */}   
               <nav className="hidden md:flex space-x-6">
-              <div className="p-2 hover:bg-white hover:scale-110 font-shadowsLight2 hover:font-serif hover:shadow-lg transition-transform duration-300 rounded-lg text-white hover:text-black sketchy sketchy-none">
+              <div className="p-2 hover:scale-110 font-shadowsLight2 font-bold hover:shadow-lg transition-transform duration-300 rounded-lg text-black sketchy sketchy-none">
                <a href="/" className="text-4xl">
                    Home
                </a>
                </div>
-               <div className="p-2 hover:bg-white hover:scale-110 font-shadowsLight2 hover:font-serif hover:shadow-lg transition-transform duration-300 rounded-lg text-white hover:text-black sketchy sketchy-none">
+               <div className="p-2 hover:scale-110 font-shadowsLight2 font-bold hover:shadow-lg transition-transform duration-300 rounded-lg text-black sketchy sketchy-none">
                <a href="#projects" className="text-4xl">
                    Projects
                </a>
                </div>
-               <div className="p-2 hover:bg-white hover:scale-110 font-shadowsLight2 hover:font-serif hover:shadow-lg transition-transform duration-300 rounded-lg text-white hover:text-black sketchy sketchy-none">
+               <div className="p-2 hover:scale-110 font-shadowsLight2 font-bold hover:shadow-lg transition-transform duration-300 rounded-lg text-black sketchy sketchy-none">
                <a href="#about" className="text-4xl">
                    About
                </a>
                </div>
-              <div className="p-2 hover:bg-white hover:scale-110 hover:shadow-lg font-shadowsLight2 hover:font-serif transition-transform duration-300 rounded-lg text-white hover:text-black sketchy sketchy-none">
+              <div className="p-2 hover:scale-110 hover:shadow-lg font-shadowsLight2 font-bold transition-transform duration-300 rounded-lg text-black sketchy sketchy-none">
                <a href="#blog" className="text-4xl">
                    Blog
                </a>
@@ -35,10 +35,10 @@ export default function Header() {
               </nav>
               {/* Actions */}
               <div className="flex space-x-6">
-              <button className="bg-transparent border-2 p-2  sketchy sketchy-none rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110 hover:bg-white">
+              <button className="bg-zinc-400 p-2  sketchy sketchy-none rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110">
                   🌓
               </button>
-              <button className="bg-transparent border-2 p-2  sketchy sketchy-none rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110 hover:bg-white">
+              <button className="bg-zinc-400 p-2  sketchy sketchy-none rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110">
                   🚀
               </button>
               <div className="relative group">
@@ -57,7 +57,7 @@ export default function Header() {
             </div>
               </div>
               </div>
-        </div> <div className="text-white border-2 border-white sketchy"></div>
+        </div> <div className="text-white border-2 border-black sketchy"></div>
     </header>
   );
 }

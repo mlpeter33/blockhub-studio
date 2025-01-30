@@ -48,13 +48,13 @@ type GridDragItemProps = {
     };
 
     return(
-        <div className="grid-item absolute cursor-pointer hover:scale-105 hover:shadow-lg transition-transform pointer-events-auto"
+        <div className="grid-item absolute cursor-pointer hover:scale-105 hover:shadow-[0px_10px_30px_rgba(0,0,0,0.8)] transition-transform pointer-events-auto"
         style={{left: startX, top: startY}}
         draggable="true"
         onDragStart={handleDragStart}
         onDragEnd={handleDragEnd}>
-                <div className="rounded-lg bg-transparent border-4 border-white sketchy sketchy-none hover:border-black hover:bg-white">
-                    <div className="p-4 h-max-full w-max-full text-center invert hover:invert-0">{children}
+                <div className="rounded-lg bg-orange-100 border-4 border-black sketchy sketchy-none">
+                    <div className="p-4 h-max-full w-max-full text-center">{children}
                         </div>
                     </div>
                 </div> 
