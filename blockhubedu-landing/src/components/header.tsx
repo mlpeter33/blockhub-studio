@@ -35,14 +35,14 @@ export default function Header() {
               </nav>
               {/* Actions */}
               <div className="flex space-x-6">
-              <button className="bg-zinc-400 p-2  sketchy sketchy-none rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110">
+              <button className="bg-stone-400 p-2  sketchy sketchy-none rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110">
                   🌓
               </button>
-              <button className="bg-zinc-400 p-2  sketchy sketchy-none rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110">
+              <button className="bg-stone-400 p-2  sketchy sketchy-none rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110">
                   🚀
               </button>
               <div className="relative group">
-            <button className="rotate-180 flex w-10 h-10 bg-[url(/assets/Profile.png)] sketchy sketchy-none justify-center items-center bg-cover rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110 hover:rotate-0">
+            <button className="rotate-180 flex w-10 h-10 bg-[url(/assets/Profile.webp)] sketchy sketchy-none justify-center items-center bg-cover rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110 hover:rotate-0">
             </button>
             <div className="absolute right-0 mt-2 w-40 bg-white text-black rounded shadow-md hidden group-hover:block">
               <a href="/profile" className="block px-4 py-2 hover:bg-gray-100">
