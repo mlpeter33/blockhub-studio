@@ -16,7 +16,7 @@ export default function Header() {
             {/* Navigation Links */}   
               <nav className="hidden md:flex space-x-6">
               <div className="p-2 hover:scale-110 font-shadowsLight2 font-bold hover:shadow-lg transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
-               <a href="/" className="text-4xl">
+               <a href="#home" className="text-4xl">
                    Home
                </a>
                </div>
