@@ -1,9 +1,12 @@
 import React from "react";
 import BlockhubLogo from "./navbar/blockhub-logo";
+import useScrollBlur from "../hooks/useScrollBlur";
 
 export default function Header() {
+  const isScrolled = useScrollBlur(50);
   return (
-    <header className="z-[99999] fixed w-full bg-cover"> {/*shadow-[0px_10px_30px_rgba(0,0,0,0.8)] */}
+    <header className={`z-[99999] fixed w-full bg-cover transition-all duration-300
+    ${isScrolled ? "backdrop-blur-lg bg-orange-100/20 shadow-md" : "bg-orange-100/100 shadow-none"}`}> {/*shadow-[0px_10px_30px_rgba(0,0,0,0.8)] */}
           <div className="container justify-between items-center mx-auto flex z-50">
           
             {/* Logo */} 
