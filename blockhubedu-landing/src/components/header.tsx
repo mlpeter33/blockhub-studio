@@ -3,7 +3,7 @@ import BlockhubLogo from "./navbar/blockhub-logo";
 
 export default function Header() {
   return (
-    <header className="z-[99999] fixed bg-orange-100 w-full bg-cover"> {/*shadow-[0px_10px_30px_rgba(0,0,0,0.8)] */}
+    <header className="z-[99999] fixed w-full bg-cover"> {/*shadow-[0px_10px_30px_rgba(0,0,0,0.8)] */}
           <div className="container justify-between items-center mx-auto flex z-50">
           
             {/* Logo */} 
