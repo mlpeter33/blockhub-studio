@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 export default function Projects() {
     const { positions, handlePositionChange, handleDropItem } = useGridPositions();
     return(
-  <section id='projects'>
+  <section id='projects' className="bg-orange-100">
       <GridGame id="grid-container">
              <DragArea onDropItem={handleDropItem}>
                   <GridDragItem id="item2" startX={positions.item2.x} startY={positions.item2.y} onPositionChange={handlePositionChange}>

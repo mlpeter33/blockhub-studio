@@ -10,12 +10,11 @@ import Projects from "../sections/projects";
 export default function Home() {
     const { positions, handlePositionChange, handleDropItem } = useGridPositions();
         return(
-        <div>
+        <main className="w-screen">
             <Header /> 
-            <div className="relative w-screen h-screen overflow-hidden"> 
-                <div className="absolute top-0 left-0 w-full h-full bg-cover bg-top flex flex-col bg-orange-100"> 
+            <div className="relative w-full h-screen bg-orange-100"> 
+                <div className="absolute top-0 left-0S bg-cover bg-top flex flex-col"> 
                  <div className="justify-center items-center">
-                <GridChain>
                         <GridGame id="grid-container">
                             <DragArea onDropItem={handleDropItem}>
                             <GridDragItem id="item1" startX={positions.item1.x} startY={positions.item1.y} onPositionChange={handlePositionChange}>
@@ -26,10 +25,9 @@ export default function Home() {
                             </DragArea>
                         </GridGame>
                         <Projects />
-                </GridChain>
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
     )
 } 
