@@ -38,11 +38,15 @@ export default function Header() {
               </nav>
               {/* Actions */}
               <div className="flex space-x-6">
-              <button className="bg-stone-400 p-2  sketchy sketchy-none rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110">
+              <button className="bg-stone-400 p-2 sketchy sketchy-none rounded-full group hover:shadow-lg transition-transform duration-300 hover:scale-110">
+                <div className=" rotate-180 transition-transform duration-300 group-hover:rotate-0">
                   🌓
+                  </div>
               </button>
-              <button className="bg-stone-400 p-2  sketchy sketchy-none rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110">
+              <button className="bg-stone-400 p-2 group sketchy sketchy-none rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110">
+                <div className="apply-bounce">
                   🚀
+                  </div>
               </button>
               <div className="relative group">
             <button className="rotate-180 flex w-10 h-10 bg-[url(/assets/Profile.webp)] sketchy sketchy-none justify-center items-center bg-cover rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110 hover:rotate-0">
