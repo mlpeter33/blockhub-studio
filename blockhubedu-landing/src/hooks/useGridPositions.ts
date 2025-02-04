@@ -11,9 +11,17 @@ interface Positions {
 
 export default function useGridPositions() {
     const [positions, setPositions] = useState<Positions>({
+        //Home
         item1: { x: 350, y: 100 },
         item2: { x: 850, y: 200 },
         item3: { x: 250, y: 200 },
+        //blog
+        forum1: { x: 250, y: 200 },
+        forum2: { x: 550, y: 200 },
+        forum3: { x: 850, y: 200 },
+        forum4: { x: 250, y: 400 },
+        forum5: { x: 550, y: 400 },
+        forum6: { x: 850, y: 400 },
     });
 
     const handlePositionChange = (id: string, x: number, y: number) => {

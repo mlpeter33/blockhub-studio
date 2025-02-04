@@ -1,9 +1,12 @@
 import React from "react";
 import BlockhubLogo from "./navbar/blockhub-logo";
+import useScrollBlur from "../hooks/useScrollBlur";
 
 export default function Header() {
+  const isScrolled = useScrollBlur(50);
   return (
-    <header className="z-[99999] fixed w-full bg-cover"> {/*shadow-[0px_10px_30px_rgba(0,0,0,0.8)] */}
+    <header className={`z-[99999] fixed w-full bg-cover transition-all duration-300
+    ${isScrolled ? "backdrop-blur-lg bg-orange-100/20 shadow-md" : "bg-orange-100/100 shadow-none"}`}> {/*shadow-[0px_10px_30px_rgba(0,0,0,0.8)] */}
           <div className="container justify-between items-center mx-auto flex z-50">
           
             {/* Logo */} 
@@ -13,7 +16,7 @@ export default function Header() {
             {/* Navigation Links */}   
               <nav className="hidden md:flex space-x-6">
               <div className="p-2 hover:scale-110 font-shadowsLight2 font-bold hover:shadow-lg transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
-               <a href="/" className="text-4xl">
+               <a href="#home" className="text-4xl">
                    Home
                </a>
                </div>
@@ -35,11 +38,15 @@ export default function Header() {
               </nav>
               {/* Actions */}
               <div className="flex space-x-6">
-              <button className="bg-stone-400 p-2  sketchy sketchy-none rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110">
+              <button className="bg-stone-400 p-2 sketchy sketchy-none rounded-full group hover:shadow-lg transition-transform duration-300 hover:scale-110">
+                <div className=" rotate-180 transition-transform duration-300 group-hover:rotate-0">
                   🌓
+                  </div>
               </button>
-              <button className="bg-stone-400 p-2  sketchy sketchy-none rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110">
+              <button className="bg-stone-400 p-2 group sketchy sketchy-none rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110">
+                <div className="apply-bounce">
                   🚀
+                  </div>
               </button>
               <div className="relative group">
             <button className="rotate-180 flex w-10 h-10 bg-[url(/assets/Profile.webp)] sketchy sketchy-none justify-center items-center bg-cover rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110 hover:rotate-0">
