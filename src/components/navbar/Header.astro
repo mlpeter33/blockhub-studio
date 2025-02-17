@@ -1,38 +1,47 @@
 ---
 import '../../styles/global.css';
 import Logo from './Logo.astro';
+import Button from '../UI/Button.astro';
 ---
 <header class="z-[99999] top-0 fixed w-full bg-transparent">
   <div class="container justify-between items-center mx-auto flex z-50">
     {/* Logo */}
-     <div class="hover:scale-110  transition-transform duration-300 px-10 pb-1 justify-between items-center flex bg-[url(/assets/HeaderItem.webp)] bg-center bg-no-repeat bg-[length:100%_100%]"> 
+     <div class="hover:scale-110 transition-transform duration-300 px-10 pb-1 justify-between items-center flex"> 
+      <a href="/" class="flex items-center">
         <Logo />
+      </a>
      </div>
-     <div class=" px-10 pb-1 justify-between items-center flex bg-[url(/assets/HeaderItem.webp)] bg-center bg-no-repeat bg-[length:100%_100%]"> 
-       {/* Navigation Links */} 
-        <nav class="hidden md:flex space-x-6">
-          <div class="p-2 hover:scale-110 font-[shadowsLight2] font-bold transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
+     {/* Navigation Links */} 
+        <nav id="siteNav" class="opacity-0 md:flex space-x-6 px-10 pb-1 z-[-10] scale-75 transition-all duration-300 origin-right">
+          <Button>
+          <div class="font-[shadowsLight2] font-bold text-neutral-700">
             <a href="#home" class="text-4xl">
            Home
             </a>
           </div>
-          <div class="p-2 hover:scale-110 font-[shadowsLight2]  font-bold transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
+          </Button>
+          <Button>
+            <div class="font-[shadowsLight2] font-bold text-neutral-700">
             <a href="#projects" class="text-4xl">
            Projects
             </a>
           </div>
-          <div class="p-2 hover:scale-110 font-[shadowsLight2] font-bold  transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
+        </Button>
+        <Button>
+          <div class="font-[shadowsLight2] font-bold text-neutral-700">            
             <a href="#about" class="text-4xl">
            About
             </a>
           </div>
-          <div class="p-2 hover:scale-110 font-[shadowsLight2] font-bold transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
+        </Button>
+        <Button>
+          <div class="font-[shadowsLight2] font-bold text-neutral-700">
             <a href="#blog" class="text-4xl">
            Blog
             </a>
           </div>
+        </Button>
         </nav> 
-      </div>
       {/* Actions */}
       <div class="top-0 px-10 pt-2.5 pb-2.5 justify-between items-center flex bg-[url(/assets/HeaderItem.webp)] bg-center bg-no-repeat bg-[length:100%_100%]"> 
         <div class="flex space-x-6">
@@ -46,19 +55,30 @@ import Logo from './Logo.astro';
             🚀
             </div>
           </button>
-          <div class="relative group">
-            <button class="rotate-180 flex w-10 h-10 bg-[url(/assets/Profile.webp)] sketchy sketchy-none justify-center items-center bg-cover rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110 hover:rotate-0">
+            <button id="profileBtn" class="rotate-180 flex w-10 h-10 bg-[url(/assets/Profile.webp)] sketchy sketchy-none justify-center items-center bg-cover rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110">
             </button>
-            <div class="absolute right-0 mt-2 w-40 bg-gray-100 border-2 border-neutral-700 rounded-3xl rounded-e-2xl shadow-lg overflow-hidden hidden group-hover:block">
-              <a href="/Discord" class="block px-4 py-2 text-neutral-700 hover:text-white hover:bg-neutral-700">
-          Discord
-              </a>
-              <a href="/Instagram" class="block px-4 py-2 text-neutral-700 hover:text-white hover:bg-neutral-700">
-          Instagram
-              </a>
-            </div>
-          </div>
         </div>
       </div>
   </div>
 </header>
+<script>
+  const profileBtn = document.getElementById('profileBtn');
+    if (profileBtn) {
+           profileBtn.addEventListener('click', () => {
+            const nav = document.getElementById('siteNav');
+            if (nav) {
+                  if (nav.classList.contains('z-[-10]')) {
+                       profileBtn.classList.remove('rotate-180');
+                       profileBtn.classList.add('rotate-0');
+                       nav.classList.remove('z-[-10]', 'scale-75', 'opacity-0');
+                       nav.classList.add('z-50', 'scale-100', 'opacity-100');
+                    } else {
+                       profileBtn.classList.remove('rotate-0');
+                       profileBtn.classList.add('rotate-180');
+                       nav.classList.remove('z-50', 'scale-100', 'opacity-100');
+                       nav.classList.add('z-[-10]', 'scale-75', 'opacity-0');
+                     }
+                  }
+              });
+            }
+</script>
