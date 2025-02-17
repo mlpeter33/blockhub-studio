@@ -2,63 +2,63 @@
 import '../../styles/global.css';
 import Logo from './Logo.astro';
 ---
-<header class="z-[99999] top-0 fixed w-full bg-orange-100 shadow-md ">
+<header class="z-[99999] top-0 fixed w-full bg-transparent">
   <div class="container justify-between items-center mx-auto flex z-50">
     {/* Logo */}
-    <Logo />
-    {/* Navigation Links */} 
-    <div class=" px-10 pb-1 justify-between items-center flex bg-[url(/assets/HeaderItem.webp)] bg-center bg-no-repeat bg-[length:100%_100%]"> 
-    <nav class="hidden md:flex space-x-6">
-      <div class="p-2 hover:scale-110 font-[shadowsLight2] font-bold transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
-       <a href="#home" class="text-4xl">
+     <div class="hover:scale-110  transition-transform duration-300 px-10 pb-1 justify-between items-center flex bg-[url(/assets/HeaderItem.webp)] bg-center bg-no-repeat bg-[length:100%_100%]"> 
+        <Logo />
+     </div>
+     <div class=" px-10 pb-1 justify-between items-center flex bg-[url(/assets/HeaderItem.webp)] bg-center bg-no-repeat bg-[length:100%_100%]"> 
+       {/* Navigation Links */} 
+        <nav class="hidden md:flex space-x-6">
+          <div class="p-2 hover:scale-110 font-[shadowsLight2] font-bold transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
+            <a href="#home" class="text-4xl">
            Home
-       </a>
-       </div>
-       <div class="p-2 hover:scale-110 font-[shadowsLight2]  font-bold transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
-       <a href="#projects" class="text-4xl">
+            </a>
+          </div>
+          <div class="p-2 hover:scale-110 font-[shadowsLight2]  font-bold transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
+            <a href="#projects" class="text-4xl">
            Projects
-       </a>
-       </div>
-       <div class="p-2 hover:scale-110 font-[shadowsLight2] font-bold  transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
-       <a href="#about" class="text-4xl">
+            </a>
+          </div>
+          <div class="p-2 hover:scale-110 font-[shadowsLight2] font-bold  transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
+            <a href="#about" class="text-4xl">
            About
-       </a>
-       </div>
-      <div class="p-2 hover:scale-110 font-[shadowsLight2] font-bold transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
-       <a href="#blog" class="text-4xl">
+            </a>
+          </div>
+          <div class="p-2 hover:scale-110 font-[shadowsLight2] font-bold transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
+            <a href="#blog" class="text-4xl">
            Blog
-       </a>
-       </div>
-      </nav> 
-    </div>
+            </a>
+          </div>
+        </nav> 
+      </div>
       {/* Actions */}
-      <div class="flex space-x-6">
-        <button class="bg-[url(/assets/HeaderButton.webp)] bg-center bg-no-repeat bg-[length:100%_100%] p-2 group transition-transform duration-300 hover:scale-110">
-          <div class=" rotate-180 transition-transform duration-300 group-hover:rotate-0">
+      <div class="top-0 px-10 pt-2.5 pb-2.5 justify-between items-center flex bg-[url(/assets/HeaderItem.webp)] bg-center bg-no-repeat bg-[length:100%_100%]"> 
+        <div class="flex space-x-6">
+          <button class="bg-[url(/assets/HeaderButton.webp)] bg-center bg-no-repeat bg-[length:100%_100%] p-2 group transition-transform duration-300 hover:scale-110">
+            <div class=" rotate-180 transition-transform duration-300 group-hover:rotate-0">
             🌓
             </div>
-        </button>
-        <button class="bg-[url(/assets/HeaderButton.webp)] bg-center bg-no-repeat bg-[length:100%_100%] p-2 group transition-transform duration-300 hover:scale-110">
-          <div class="apply-bounce">
+          </button>
+          <button class="bg-[url(/assets/HeaderButton.webp)] bg-center bg-no-repeat bg-[length:100%_100%] p-2 group transition-transform duration-300 hover:scale-110">
+            <div class="apply-bounce">
             🚀
             </div>
-        </button>
-        <div class="relative group">
-      <button class="rotate-180 flex w-10 h-10 bg-[url(/assets/Profile.webp)] sketchy sketchy-none justify-center items-center bg-cover rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110 hover:rotate-0">
-      </button>
-      <div class="absolute right-0 mt-2 w-40 bg-orange-100 rounded-3xl shadow-lg hidden group-hover:block border-2 border-neutral-700 overflow-hidden rounded-e-2xl">
-        <a href="/profile" class="block px-4 py-2 text-neutral-700 hover:text-white hover:bg-neutral-700">
-          Profile
-        </a>
-        <a href="/settings" class="block px-4 py-2 text-neutral-700 hover:text-white hover:bg-neutral-700">
-          Settings
-        </a>
-        <a href="/logout" class="block px-4 py-2 text-neutral-700 hover:text-white hover:bg-neutral-700">
-          Logout
-        </a>
+          </button>
+          <div class="relative group">
+            <button class="rotate-180 flex w-10 h-10 bg-[url(/assets/Profile.webp)] sketchy sketchy-none justify-center items-center bg-cover rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110 hover:rotate-0">
+            </button>
+            <div class="absolute right-0 mt-2 w-40 bg-gray-100 border-2 border-neutral-700 rounded-3xl rounded-e-2xl shadow-lg overflow-hidden hidden group-hover:block">
+              <a href="/Discord" class="block px-4 py-2 text-neutral-700 hover:text-white hover:bg-neutral-700">
+          Discord
+              </a>
+              <a href="/Instagram" class="block px-4 py-2 text-neutral-700 hover:text-white hover:bg-neutral-700">
+          Instagram
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-        </div>
-        </div>
   </div>
-</div>
 </header>
