@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@tailwind utilities; 
 
 .sketchy {
     filter: url(#sketchy);
