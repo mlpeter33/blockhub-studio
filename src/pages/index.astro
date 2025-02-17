@@ -5,11 +5,12 @@ import Header from '../components/navbar/Header.astro';
 ---
 
 <Layout>
-
+	<main class="bg-orange-100 h-full w-full fixed">
 	<Header />
-	<Welcome />
-	<Welcome />
-	<Welcome />
-	<Welcome />
-
+	<div class="container flex felx-col">
+	<div class="fixed bg-[url(/assets/Shadow.png)] bg-no-repeat bg-[length:100%_100%] bg-center w-full h-full">
+			<Welcome />
+	</div>
+</div>
+	</main>
 </Layout>
