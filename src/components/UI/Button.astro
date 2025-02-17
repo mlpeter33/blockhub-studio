@@ -1,0 +1,19 @@
+---
+import '../../styles/global.css';
+
+interface Props {
+  href?: string;
+}
+
+const { href } = Astro.props;
+---
+
+<a href={href} class="relative inline-block hover:scale-110 transition-transform duration-300">
+    <img 
+      src="/assets/Button.webp"
+      alt="Button"
+      class="hover:drop-shadow-lg transition-shadow duration-300 scale-80" />
+      <div class="absolute inset-0 flex items-center justify-center p-2">
+    <slot />
+</div>
+</a>

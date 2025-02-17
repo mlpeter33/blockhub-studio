@@ -1,0 +1,76 @@
+---
+import '../../styles/global.css';
+import Logo from './Logo.astro';
+import Button from '../UI/Button.astro';
+---
+<header class="z-[99999] top-0 fixed w-full bg-transparent">
+  <div class="container justify-between items-center mx-auto flex z-50">
+    {/* Logo */}
+     <div class="hover:scale-110 transition-transform duration-300 px-10 pb-1 justify-between items-center flex"> 
+      <a href="/" class="flex items-center">
+        <Logo />
+      </a>
+     </div>
+     {/* Navigation Links */} 
+        <nav id="siteNav" class="opacity-0 md:flex space-x-6 px-10 pb-1 z-[-10] scale-75 transition-all duration-300 origin-right">
+          <Button href="#home">
+          <div class="font-[shadowsLight2] font-bold text-neutral-700 text-4xl">
+           Home
+          </div>
+          </Button>
+          <Button href="#projects">
+            <div class="font-[shadowsLight2] font-bold text-neutral-700 text-4xl">
+           Projects        
+          </div>
+        </Button>
+        <Button href="#about">
+          <div class="font-[shadowsLight2] font-bold text-neutral-700 text-4xl">            
+           About
+          </div>
+        </Button>
+        <Button href="#blog">
+          <div class="font-[shadowsLight2] font-bold text-neutral-700 text-4xl">
+           Blog
+          </div>
+        </Button>
+        </nav> 
+      {/* Actions */}
+      <div class="top-0 px-10 pt-2.5 pb-2.5 justify-between items-center flex"> 
+        <div class="flex space-x-6">
+          <button class="bg-[url(/assets/HeaderButton.webp)] bg-center bg-no-repeat bg-[length:100%_100%] p-2 group transition-transform duration-300 hover:scale-110">
+            <div class=" rotate-180 transition-transform duration-300 group-hover:rotate-0">
+            🌓
+            </div>
+          </button>
+          <button class="bg-[url(/assets/HeaderButton.webp)] bg-center bg-no-repeat bg-[length:100%_100%] p-2 group transition-transform duration-300 hover:scale-110">
+            <div class="apply-bounce">
+            🚀
+            </div>
+          </button>
+            <button id="profileBtn" class="rotate-180 flex w-10 h-10 bg-[url(/assets/Profile.webp)] justify-center items-center bg-cover rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110">
+            </button>
+        </div>
+      </div>
+  </div>
+</header>
+<script>
+  const profileBtn = document.getElementById('profileBtn');
+    if (profileBtn) {
+           profileBtn.addEventListener('click', () => {
+            const nav = document.getElementById('siteNav');
+            if (nav) {
+                  if (nav.classList.contains('z-[-10]')) {
+                       profileBtn.classList.remove('rotate-180');
+                       profileBtn.classList.add('rotate-0');
+                       nav.classList.remove('z-[-10]', 'scale-75', 'opacity-0');
+                       nav.classList.add('z-50', 'scale-100', 'opacity-100');
+                    } else {
+                       profileBtn.classList.remove('rotate-0');
+                       profileBtn.classList.add('rotate-180');
+                       nav.classList.remove('z-50', 'scale-100', 'opacity-100');
+                       nav.classList.add('z-[-10]', 'scale-75', 'opacity-0');
+                     }
+                  }
+              });
+            }
+</script>
