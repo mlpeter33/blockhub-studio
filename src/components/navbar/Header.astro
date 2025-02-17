@@ -1,31 +1,36 @@
 ---
 import '../../styles/global.css';
+import Logo from './Logo.astro';
 ---
 <header class="z-[99999] top-0 fixed w-full bg-orange-100 shadow-md ">
   <div class="container justify-between items-center mx-auto flex z-50">
-    {/* Navigation Links */}  
+    {/* Logo */}
+    <Logo />
+    {/* Navigation Links */} 
+    <div class=" px-10 pb-1 justify-between items-center flex bg-[url(/assets/HeaderItem.webp)] bg-center bg-no-repeat bg-[length:100%_100%]"> 
     <nav class="hidden md:flex space-x-6">
-      <div class="p-2 hover:scale-110 font-[shadowsLight2] font-bold hover:shadow-lg transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
+      <div class="p-2 hover:scale-110 font-[shadowsLight2] font-bold transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
        <a href="#home" class="text-4xl">
            Home
        </a>
        </div>
-       <div class="p-2 hover:scale-110 font-[shadowsLight2]  font-bold hover:shadow-lg transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
+       <div class="p-2 hover:scale-110 font-[shadowsLight2]  font-bold transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
        <a href="#projects" class="text-4xl">
            Projects
        </a>
        </div>
-       <div class="p-2 hover:scale-110 font-[shadowsLight2] font-bold hover:shadow-lg transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
+       <div class="p-2 hover:scale-110 font-[shadowsLight2] font-bold  transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
        <a href="#about" class="text-4xl">
            About
        </a>
        </div>
-      <div class="p-2 hover:scale-110 hover:shadow-lg font-[shadowsLight2] font-bold transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
+      <div class="p-2 hover:scale-110 font-[shadowsLight2] font-bold transition-transform duration-300 rounded-lg text-neutral-700 sketchy sketchy-none">
        <a href="#blog" class="text-4xl">
            Blog
        </a>
        </div>
       </nav> 
+    </div>
       {/* Actions */}
       <div class="flex space-x-6">
         <button class="bg-[url(/assets/HeaderButton.webp)] bg-center bg-no-repeat bg-[length:100%_100%] p-2 group transition-transform duration-300 hover:scale-110">
