@@ -1,53 +1,59 @@
 ---
 import '../../styles/global.css';
 import Logo from './Logo.astro';
-import Button from '../UI/Button.astro';
+import HeaderButton from '../UI/HeaderButton.astro';
 ---
 <header class="z-[99999] top-0 fixed w-full bg-transparent">
   <div class="container justify-between items-center mx-auto flex z-50">
     {/* Logo */}
      <div class="hover:scale-110 transition-transform duration-300 px-10 pb-1 justify-between items-center flex"> 
-      <a href="/" class="flex items-center">
+      <a href="/" class="flex sketch-shadow bg-[rgba(251,243,225,255)] rounded-2xl items-center">
+        <div class="sketch-inner-shadow rounded-2xl">
         <Logo />
+        </div>
       </a>
      </div>
      {/* Navigation Links */} 
-        <nav id="siteNav" class="opacity-0 md:flex space-x-6 px-10 pb-1 z-[-10] scale-75 transition-all duration-300 origin-right">
-          <Button href="#home">
-          <div class="font-[shadowsLight2] font-bold text-neutral-700 text-4xl">
+        <nav id="siteNav" class="relative opacity-0 justify-center space-x-6 z-[-10] scale-50 transition-all duration-300 origin-top">
+          <HeaderButton href="#home">
+          <div class="font-[cabinSketch] font-bold text-neutral-800 text-2xl">
            Home
           </div>
-          </Button>
-          <Button href="#projects">
-            <div class="font-[shadowsLight2] font-bold text-neutral-700 text-4xl">
+          </HeaderButton>
+          <HeaderButton href="#projects">
+            <div class="font-[cabinSketch] font-bold text-neutral-800 text-2xl">
            Projects        
           </div>
-        </Button>
-        <Button href="#about">
-          <div class="font-[shadowsLight2] font-bold text-neutral-700 text-4xl">            
+        </HeaderButton>
+        <HeaderButton href="#about">
+          <div class="font-[cabinSketch] font-bold text-neutral-800 text-2xl">            
            About
           </div>
-        </Button>
-        <Button href="#blog">
-          <div class="font-[shadowsLight2] font-bold text-neutral-700 text-4xl">
+        </HeaderButton>
+        <HeaderButton href="#blog">
+          <div class="font-[cabinSketch] font-bold text-neutral-800 text-2xl">
            Blog
           </div>
-        </Button>
+        </HeaderButton>
         </nav> 
       {/* Actions */}
       <div class="top-0 px-10 pt-2.5 pb-2.5 justify-between items-center flex"> 
         <div class="flex space-x-6">
-          <button class="bg-[url(/assets/HeaderButton.webp)] bg-center bg-no-repeat bg-[length:100%_100%] p-2 group transition-transform duration-300 hover:scale-110">
-            <div class=" rotate-180 transition-transform duration-300 group-hover:rotate-0">
+          <button class="bg-[rgba(251,243,225,255)] rounded-2xl sketch-shadow group transition-transform duration-300 hover:scale-110">
+            <div class=" sketch-inner-shadow p-2 rounded-2xl">
+            <div class="rotate-180 transition-transform duration-300 group-hover:rotate-0">
             🌓
             </div>
+          </div>
           </button>
-          <button class="bg-[url(/assets/HeaderButton.webp)] bg-center bg-no-repeat bg-[length:100%_100%] p-2 group transition-transform duration-300 hover:scale-110">
+          <button class="bg-[rgba(251,243,225,255)] rounded-2xl sketch-shadow group transition-transform duration-300 hover:scale-110">
+            <div class=" sketch-inner-shadow rounded-2xl p-2">
             <div class="apply-bounce">
             🚀
             </div>
+            </div>
           </button>
-            <button id="profileBtn" class="rotate-180 flex w-10 h-10 bg-[url(/assets/Profile.webp)] justify-center items-center bg-cover rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110">
+            <button id="profileBtn" class="sketch-shadow rotate-0 flex w-10 h-10 bg-[url(/assets/Profile.webp)] justify-center items-center bg-cover rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110">
             </button>
         </div>
       </div>
@@ -60,13 +66,13 @@ import Button from '../UI/Button.astro';
             const nav = document.getElementById('siteNav');
             if (nav) {
                   if (nav.classList.contains('z-[-10]')) {
-                       profileBtn.classList.remove('rotate-180');
-                       profileBtn.classList.add('rotate-0');
+                       profileBtn.classList.remove('rotate-0');
+                       profileBtn.classList.add('rotate-180');
                        nav.classList.remove('z-[-10]', 'scale-75', 'opacity-0');
                        nav.classList.add('z-50', 'scale-100', 'opacity-100');
                     } else {
-                       profileBtn.classList.remove('rotate-0');
-                       profileBtn.classList.add('rotate-180');
+                       profileBtn.classList.remove('rotate-180');
+                       profileBtn.classList.add('rotate-0');
                        nav.classList.remove('z-50', 'scale-100', 'opacity-100');
                        nav.classList.add('z-[-10]', 'scale-75', 'opacity-0');
                      }
