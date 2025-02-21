@@ -7,29 +7,31 @@ import HeaderButton from '../UI/HeaderButton.astro';
   <div class="container justify-between items-center mx-auto flex z-50">
     {/* Logo */}
      <div class="hover:scale-110 transition-transform duration-300 px-10 pb-1 justify-between items-center flex"> 
-      <a href="/" class="flex sketch-shadow bg-[rgba(251,243,225,255)] border-2 rounded-2xl border-neutral-700 items-center">
+      <a href="/" class="flex sketch-shadow bg-[rgba(251,243,225,255)] rounded-2xl items-center">
+        <div class="sketch-inner-shadow rounded-2xl">
         <Logo />
+        </div>
       </a>
      </div>
      {/* Navigation Links */} 
         <nav id="siteNav" class="relative opacity-0 justify-center space-x-6 z-[-10] scale-50 transition-all duration-300 origin-top">
           <HeaderButton href="#home">
-          <div class="font-[shadowsLight2] font-bold text-neutral-800 text-4xl">
+          <div class="font-[cabinSketch] font-bold text-neutral-800 text-2xl">
            Home
           </div>
           </HeaderButton>
           <HeaderButton href="#projects">
-            <div class="font-[shadowsLight2] font-bold text-neutral-800 text-4xl">
+            <div class="font-[cabinSketch] font-bold text-neutral-800 text-2xl">
            Projects        
           </div>
         </HeaderButton>
         <HeaderButton href="#about">
-          <div class="font-[shadowsLight2] font-bold text-neutral-800 text-4xl">            
+          <div class="font-[cabinSketch] font-bold text-neutral-800 text-2xl">            
            About
           </div>
         </HeaderButton>
         <HeaderButton href="#blog">
-          <div class="font-[shadowsLight2] font-bold text-neutral-800 text-4xl">
+          <div class="font-[cabinSketch] font-bold text-neutral-800 text-2xl">
            Blog
           </div>
         </HeaderButton>
@@ -37,17 +39,21 @@ import HeaderButton from '../UI/HeaderButton.astro';
       {/* Actions */}
       <div class="top-0 px-10 pt-2.5 pb-2.5 justify-between items-center flex"> 
         <div class="flex space-x-6">
-          <button class="drop-shadow-2xl bg-[url(/assets/Button.png)] bg-center bg-no-repeat bg-[length:100%_100%] p-2 group transition-transform duration-300 hover:scale-110">
+          <button class="bg-[rgba(251,243,225,255)] rounded-2xl sketch-shadow group transition-transform duration-300 hover:scale-110">
+            <div class=" sketch-inner-shadow p-2 rounded-2xl">
             <div class="rotate-180 transition-transform duration-300 group-hover:rotate-0">
             🌓
             </div>
+          </div>
           </button>
-          <button class="drop-shadow-2xl bg-[url(/assets/Button.png)] bg-center bg-no-repeat bg-[length:100%_100%] p-2 group transition-transform duration-300 hover:scale-110">
+          <button class="bg-[rgba(251,243,225,255)] rounded-2xl sketch-shadow group transition-transform duration-300 hover:scale-110">
+            <div class=" sketch-inner-shadow rounded-2xl p-2">
             <div class="apply-bounce">
             🚀
             </div>
+            </div>
           </button>
-            <button id="profileBtn" class="rotate-0 flex w-10 h-10 bg-[url(/assets/Profile.webp)] justify-center items-center bg-cover rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110">
+            <button id="profileBtn" class="sketch-shadow rotate-0 flex w-10 h-10 bg-[url(/assets/Profile.webp)] justify-center items-center bg-cover rounded-full hover:shadow-lg transition-transform duration-300 hover:scale-110">
             </button>
         </div>
       </div>
