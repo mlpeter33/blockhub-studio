@@ -3,21 +3,65 @@ import '../styles/global.css';
 ---
 
 <section id='home'>
-	<div class="relative justify-center items-center container h-screen w-screen">
+	<div class="relative justify-center items-center h-screen w-screen">
 		<div class="absolute flex flex-col items-center mx-115 my-2"> 
 			<p class="text-neutral-800 text-4xl font-[cabinSketch] font-bold">Welcome to</p>
 			<p class=" text-neutral-800 text-6xl font-[cabinSketch] font-bold whitespace-nowrap">BlockHub Studio</p>
 		</div>
-		<div class="absolute border-2"> 
-			<div class="bg-[rgba(251,243,225,255)] sketchy sketch-shadow rounded-2xl mt-30 hover:scale-110 transition-transform duration-300">
-				<div class="sketch-inner-shadow sketch-inner-shadow--strong rounded-2xl">
+		<div id="form"class="absolute mx-112 mt-40 flex h-120 w-115 transition-all duration-300 origin-top"> 
+			<div class="bg-[rgba(251,243,225,255)] sketchy sketch-shadow rounded-t-2xl w-full h-full">
+				<div class="sketch-inner-shadow sketch-inner-shadow--strong rounded-t-2xl w-full h-full">
 					<div class="flex flex-col items-center justify-center">
-				<div class="sketch-bg top-0 w-full h-15 rounded-t-2xl border-b-4 border-b-[rgb(44,44,44)]"></div>
-				<p class="text-neutral-800 text-4xl font-[cabinSketch] font-bold">Join Us</p>
+				<div class="sketch-bg top-0 w-full h-15 rounded-t-2xl border-b-4 border-b-[rgb(44,44,44)] justify-center items-center flex">
+				<div class="items-center justify-center flex p-2 space-x-4 ml-90">
+					<button id="upBtn" class="cursor-pointer sketch-inner-shadow rounded-full bg-[rgba(251,243,225,255)] sketchy w-8 h-8 hover:bg-green-300">
+					</button>
+					<button id="downBtn" class="cursor-pointer sketch-inner-shadow rounded-full bg-[rgba(251,243,225,255)] sketchy w-8 h-8 hover:bg-red-300">
+					</button>
+				</div>
+				</div>
+				<div class="sketch-shadow mt-20 bg-white text-neutral-800 w-80">
+					<div class="sketch-inner-shadow p-3">
+				<input type="text" placeholder="Join Us" class="text-2xl font-[cabinSketch] w-full h-full font-bold outline-none border-none focus:ring-0"></input>
+			</div>
+		</div>
+				<button class="cursor-pointer mt-10 sketch-shadow bg-[rgba(251,243,225,255)] text-neutral-800 hover:bg-[#574f40] hover:text-white motion-safe:hover:scale-110 transition-transform duration-300">
+					<div class="sketch-inner-shadow p-3">
+				<p class="text-2xl font-[cabinSketch] font-bold">Join Us</p>
+			</div>
+			</button>
 				</div>
 			</div>
 			</div>
 		</div>
 	</div>
 </section>
+<script>
+	const upBtn = document.getElementById('upBtn');
+	const downBtn = document.getElementById('downBtn');
+	  if (downBtn) {
+		 downBtn.addEventListener('click', () => {
+			  const form = document.getElementById('form');
+			  if (form) {
+					if (form.classList.contains('mt-40')) {
+						 form.classList.remove('mt-40');
+						 form.classList.add('mt-140');
+					  } else {
+					   }
+					}
+				});
+			}
+		if (upBtn) {
+		 upBtn.addEventListener('click', () => {
+			  const form = document.getElementById('form');
+			  if (form) {
+					if (form.classList.contains('mt-140')) {
+						 form.classList.remove('mt-140');
+						 form.classList.add('mt-40');
+					  } else {
+					   }
+					}
+				});
+			  }
+  </script>
 
